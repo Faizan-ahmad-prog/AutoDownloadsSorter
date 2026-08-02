@@ -1,0 +1,28 @@
+{
+  "name": "auto-downloads-sorter",
+  "version": "1.0.0",
+  "description": "Automatic background Downloads folder file sorter with App Tray integration & Windows Notifications",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "start:hidden": "electron . --hidden",
+    "build:assets": "node build-assets.js"
+  },
+  "keywords": [
+    "file-sorter",
+    "downloads",
+    "electron",
+    "tray",
+    "notifications",
+    "organizer"
+  ],
+  "author": "Antigravity AI",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "electron": "^31.0.0",
+    "fs-extra": "^11.2.0",
+    "mime-types": "^2.1.35",
+    "node-notifier": "^10.0.1"
+  }
+}
