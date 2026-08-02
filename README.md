@@ -41,15 +41,27 @@ An automatic, background file-sorting application for Windows that organizes you
    npm install
    ```
 
-3. **Compile C# System Tray Executable (Windows):**
+3. **Compile C# System Tray App (Windows):**
    ```cmd
    C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe /out:DownloadsSorterTray.exe /r:System.dll,System.Windows.Forms.dll,System.Drawing.dll DownloadsSorterTray.cs
    ```
+   *(Note: `.NET Framework` comes pre-installed on Windows 10/11).*
 
-4. **Launch Application:**
-   Double-click `DownloadsSorterTray.exe` or run:
-   ```cmd
-   Start-AutoSorter.bat
+4. **Launch Application Options:**
+   - **System Tray Mode (24/7 Background with Toast Notifications):**
+     Double-click `DownloadsSorterTray.exe` or run:
+     ```cmd
+     Start-AutoSorter.bat
+     ```
+   - **Control Dashboard GUI:**
+     ```bash
+     npm start
+     ```
+
+5. **(Optional) Add to Windows Startup:**
+   To automatically launch the app when Windows boots:
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File add-to-startup.ps1
    ```
 
 ---
