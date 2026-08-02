@@ -32,7 +32,7 @@ An automatic, background file-sorting application for Windows that organizes you
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/AutoDownloadsSorter.git
+   git clone https://github.com/Faizan-ahmad-prog/AutoDownloadsSorter.git
    cd AutoDownloadsSorter
    ```
 
